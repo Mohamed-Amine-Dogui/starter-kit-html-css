@@ -405,8 +405,8 @@ In this case, type the name of the target page before the hash `#` and finally t
   <a href="content/page3.html#room">The room</a><br>
 </p>
 
-<a href="content/page2.html">page2</a> <br>
-<a href="content/page3.html">page3</a>
+<a href="content/page2.html"><mark>page2</mark></a> <br>
+<a href="content/page3.html"><mark>page3</mark></a>
 
 </body>
 </html>
