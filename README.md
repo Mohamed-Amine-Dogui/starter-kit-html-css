@@ -20,14 +20,66 @@ These two files will be saved on your computer. To make them communicate, all yo
 Thanks to this line of code, whenever you click on your HTML file to open it and view your website in the browser, it will automatically call the CSS file.
 This will allow you to admire the styling you have applied and modify it at your leisure without affecting the content.
 
-### En résumé
-- Le HTML constitue la structure d'une page web.
-- Le CSS permet d'ajouter du style. 
-- Les deux langages se complètent avec un rôle bien défini pour chacun. 
-- Le navigateur est un logiciel qui permet de lire les langages du Web : HTML et CSS. 
-- Tous les navigateurs embarquent des outils de développement, dont l'outil d'inspection qui permet d'accéder au HTML et au CSS d'une page.
+### In Summary
 
-# Appropriez-vous les balises HTML
+- HTML forms the structure of a web page.
+- CSS adds style to the structure.
+- Both languages complement each other with distinct roles for each.
+- The browser is software that reads the languages of the web: HTML and CSS.
+- All browsers include development tools, including the inspection tool that provides access to the HTML and CSS of a page.
 
+# Mastering HTML Tags
 
-![Balise orpheline](pics/balise_orpheline.jpg)
+HTML, the language of the web, uses elements called tags. These tags are written between angle brackets `<` and `>`. They indicate the nature of the text they enclose, allowing the browser to understand what to display on the screen for website visitors.
+![Tag](pics/tag.jpg)
+
+Tags come in pairs, consisting of an opening tag and a closing tag:
+- `<title> </title>`: "This is the title of the page,"
+- `<img>`: "This is an image,"
+- `<p> </p>`: "This is a text paragraph," and so on.
+
+There are two types of tags:
+1. **Paired Tags:** `<title>This is the title of my page</title>`
+2. **Orphan Tags:** These are single tags, often used to insert an element at a specific location, such as an image. There's no need to delimit the start and end of the image; we just tell the computer, "Insert an image here." Hence, the term "orphan tag."
+
+An orphan tag is written like this: `<img>`
+
+## Customize Tags with Attributes
+
+Tags are sometimes accompanied by attributes to provide additional information or configure an element (e.g., `<img src="photo.jpg">`).
+![Orphan Tag](pics/orphan_tag.jpg)
+
+## Use the Basic Structure of an HTML Page
+
+Create an `index.html` file and add the following code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HabibiComeToTunisia</title>
+</head>
+<body>
+Experience the perfect blend of comfort and adventure. Welcome to HabibiComeToTunisia.com, your exclusive gateway to unforgettable waterfront getaways in Bizerte, Tunisia.
+</body>
+</html>
+```
+
+- `<html lang="en">`: While not mandatory, specifying the language can prevent potential display issues, especially if you're coding a website in English.
+- Tags open and close, nesting in a specific order, similar to Russian nesting dolls:
+  ![HTML Structure](pics/html_structure.jpg)
+
+- The first line `<!DOCTYPE html>` is an essential orphan tag, indicating that this is an HTML page.
+- The paired `<html> </html>` tag encompasses the entire content of the web page. Inside, there are paired `<head> </head>` and `<body> </body>` tags.
+- The `<head> </head>` tag contains two tags providing information to the browser: the encoding and the title of the page.
+- The orphan tag `<meta charset="utf-8">` indicates the encoding used in the `.html` file, determining how special characters display (accents, Chinese and Japanese ideograms, etc.).
+- The paired `<title> </title>` tag informs the browser of the web page's title, crucial for search results and browser tab display.
+- The paired `<body> </body>` tag contains everything that will be displayed on the web page.
+
+## Comment Your HTML Code
+
+In HTML, a comment is simply a memo. It has a specific format: `<!-- This is a comment -->`.
+To comment lines (or even multiple lines) in Visual Studio Code:
+1. Select the line(s) in question.
+2. Use the keyboard shortcut with CTRL + k, then CTRL + c.
