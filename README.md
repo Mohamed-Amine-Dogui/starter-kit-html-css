@@ -6,8 +6,8 @@ Welcome to the go-to resource for kickstarting your front-end web development jo
 
 - Why not create a single language that combines HTML and CSS? Why isn't HTML enough?
 
-    1. In HTML, you'll use tags to describe your content - you'll write them between angle brackets `< >`.
-    2. In CSS, you'll use properties to apply style to HTML elements - you'll write them within curly braces `{ }`.
+1. In HTML, you'll use tags to describe your content - you'll write them between angle brackets `< >`.
+2. In CSS, you'll use properties to apply style to HTML elements - you'll write them within curly braces `{ }`.
 
 - But how do you apply CSS styles to HTML elements if they are two separate languages?
   The code editor in which you write code allows you to write in different languages, including HTML and CSS.
