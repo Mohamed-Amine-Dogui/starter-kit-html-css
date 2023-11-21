@@ -1,3 +1,4 @@
+
 # Introduction
 
 Welcome to the go-to resource for kickstarting your front-end web development journey with HTML5 and CSS3. By delving into HTML and CSS, you'll gain the skills to breathe life into your web projects, creating interfaces that captivate and engage users.
@@ -411,3 +412,5 @@ In this case, type the name of the target page before the hash `#` and finally t
 </body>
 </html>
 ```
+
+# 4. Insérez des images
