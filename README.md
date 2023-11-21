@@ -93,3 +93,11 @@ In HTML, a comment is simply a memo. It has a specific format: `<!-- This is a c
 To comment lines (or even multiple lines) in Visual Studio Code:
 1. Select the line(s) in question.
 2. Use the keyboard shortcut with CTRL + k, then CTRL + c.
+
+To comment  a single line in Intelij:
+1. Select the line in question.
+2. To comment out a single line, press Ctrl + /
+
+To comment lines (or even multiple lines) in Intelij:
+1. Select the line in question.
+2. To comment out a single line, press Ctrl + Shift + /
