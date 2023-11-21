@@ -4,9 +4,6 @@
 Welcome to the go-to resource for kickstarting your front-end web development journey with HTML5 and CSS3. By delving into HTML and CSS, you'll gain the skills to breathe life into your web projects, creating interfaces that captivate and engage users.
 
 ## Table of Contents
-- [Introduction](#introduction)
-- [Why Learn Two Languages HTML5 and CSS3 Separately?](#why-learn-two-languages-html5-and-css3-separately)
-- [Summary](#summary)
 - [1. Create Your First Web Page in HTML](#1-create-your-first-web-page-in-html)
   - [1.1 Mastering HTML Tags](#11-mastering-html-tags)
   - [1.2 Customize Tags with Attributes](#12-customize-tags-with-attributes)
