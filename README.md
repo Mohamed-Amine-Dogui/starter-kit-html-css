@@ -30,4 +30,4 @@ This will allow you to admire the styling you have applied and modify it at your
 # Appropriez-vous les balises HTML
 
 
-![Balise orpheline](pics/balise_orpheline.png)
+![Balise orpheline](pics/balise_orpheline.jpg)
