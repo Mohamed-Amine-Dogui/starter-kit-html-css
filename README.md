@@ -5,7 +5,7 @@ Welcome to the go-to resource for kickstarting your front-end web development jo
 ## table of contents
 
 - [Why learn two languages html5 and css3 separately?](#why-learn-two-languages-html5-and-css3-separately)
-- [In summary](#in-summary)
+- [Summary](#Summary)
 - [1. Mastering HTML tags](#1-mastering-html-tags)
   - [1.1 Customize tags with attributes](#11-customize-tags-with-attributes)
   - [1.2 Use the basic structure of an HTML page](#12-use-the-basic-structure-of-an-html-page)
@@ -30,7 +30,7 @@ These two files will be saved on your computer. To make them communicate, all yo
 Thanks to this line of code, whenever you click on your HTML file to open it and view your website in the browser, it will automatically call the CSS file.
 This will allow you to admire the styling you have applied and modify it at your leisure without affecting the content.
 
-### In summary
+### Summary
 
 - HTML forms the structure of a web page.
 - CSS adds style to the structure.
