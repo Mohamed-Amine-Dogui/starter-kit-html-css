@@ -4,15 +4,15 @@ Welcome to the go-to resource for kickstarting your front-end web development jo
 
 ## table of contents
 
-- [Why learn two languages html5 and css3 separately?](#why-learn-two-languages-html5-and-css3-separately)
+- [Why learn two languages html5 and css3 separately?](#why-learn-two-languages-HTML5-and-CSS3-separately)
 - [Summary](#Summary)
-- [1. Mastering HTML tags](#1-mastering-html-tags)
+- [1. Mastering HTML tags](#1-mastering-HTML-tags)
   - [1.1 Customize tags with attributes](#11-customize-tags-with-attributes)
-  - [1.2 Use the basic structure of an HTML page](#12-use-the-basic-structure-of-an-html-page)
-  - [1.3 Comment your HTML code](#13-comment-your-html-code)
+  - [1.2 Use the basic structure of an HTML page](#12-use-the-basic-structure-of-an-HTML-page)
+  - [1.3 Comment your HTML code](#13-comment-your-HTML-code)
 
 
-## Why learn two languages html5 and css3 separately?
+## Why learn two languages HTML5 and CSS3 separately?
 
 - Why not create a single language that combines HTML and CSS? Why isn't HTML enough?
 
@@ -38,7 +38,7 @@ This will allow you to admire the styling you have applied and modify it at your
 - The browser is software that reads the languages of the web: HTML and CSS.
 - All browsers include development tools, including the inspection tool that provides access to the HTML and CSS of a page.
 
-# 1. Mastering html tags
+# 1. Mastering HTML tags
 
 HTML, the language of the web, uses elements called tags. These tags are written between angle brackets `<` and `>`. They indicate the nature of the text they enclose, allowing the browser to understand what to display on the screen for website visitors.
 ![Tag](pics/tag.jpg)
@@ -59,7 +59,7 @@ An orphan tag is written like this: `<img>`
 Tags are sometimes accompanied by attributes to provide additional information or configure an element (e.g., `<img src="photo.jpg">`).
 ![Orphan Tag](pics/orphan_tag.jpg)
 
-## 1.2 Use the basic structure of an html page
+## 1.2 Use the basic structure of an HTML page
 
 Create an `index.html` file and add the following code:
 
@@ -87,7 +87,7 @@ Experience the perfect blend of comfort and adventure. Welcome to HabibiComeToTu
 - The paired `<title> </title>` tag informs the browser of the web page's title, crucial for search results and browser tab display.
 - The paired `<body> </body>` tag contains everything that will be displayed on the web page.
 
-## 1.3 Comment your html code
+## 1.3 Comment your HTML code
 
 In HTML, a comment is simply a memo. It has a specific format: `<!-- This is a comment -->`.
 To comment lines (or even multiple lines) in Visual Studio Code:
