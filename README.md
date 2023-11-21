@@ -319,21 +319,52 @@ The `id` attribute is used to give a "unique" name to a tag, to use it as a refe
 To achieve this, create a file named `page3.html` in the `content` folder:
 
 ```html
-<h1>My big page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HabibiComeToTunisia</title>
+</head>
+<body>
+<h1>Habibi welcome to Tunisia!</h1>
 <p>
-  Discover our design tips for:<br>
-  <a href="#kitchen">The kitchen</a><br>
-  <a href="#garden">The garden</a><br>
-  <a href="#living_room">The living room</a><br>
+  Experience the perfect blend of comfort and adventure. Welcome to HabibiComeToTunisia.com, your exclusive gateway to unforgettable waterfront getaways in Bizerte, Tunisia.
 </p>
-<h2 id="kitchen">The kitchen</h2>
-<p>... (some text) ...</p>
-<h2 id="garden">The garden</h2>
-<p>... (some text) ...</p>
-<h2 id="living_room">The living room</h2>
-<p>... (some text) ...</p>
 
-<a href="../index.html">Home</a>
+<h2><em>convenient booking</em></h2>
+<p>
+  Indulge in the epitome of luxury with our exquisite range of villas, mini-villas, and apartments,<br>offering an opulent selection from cozy studios to expansive 5-bedroom sanctuaries by the azure shores of Bizerte.
+</p>
+<h3><mark>Our offer</mark></h3>
+<ul>
+  <li>Villas</li>
+  <li>Mini-villas</li>
+  <li>Apartments</li>
+</ul>
+
+<p>
+  Embark on a blissful tourist journey in <strong>Bizerte</strong>, where each day unfolds with</p>
+<h4>your journey:</h4>
+<ol>
+  <li>A sumptuous breakfast</li>
+  <li>Sun-soaked moments on pristine beaches</li>
+  <li>Enchanting explorations of local treasures, and tranquil evenings immersed in the vibrant culture of this coastal haven.</li>
+</ol>
+
+
+<h4><em>More details:</em></h4>
+<p>
+  To see our accommodation options go to :<br>
+  <a href="content/page3.html#kitchen">The kitchen</a><br>
+  <a href="content/page3.html#garden">The garden</a><br>
+  <a href="content/page3.html#room">The room</a><br>
+</p>
+
+<a href="content/page2.html">page2</a> <br>
+<a href="content/page3.html">page3</a>
+
+</body>
+</html>
 ```
 
 ### 3.2.2 The anchor is located in another page
