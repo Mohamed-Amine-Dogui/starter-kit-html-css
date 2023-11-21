@@ -3,21 +3,28 @@
 Welcome to the go-to resource for kickstarting your front-end web development journey with HTML5 and CSS3. By delving into HTML and CSS, you'll gain the skills to breathe life into your web projects, creating interfaces that captivate and engage users.
 
 ## Table of Contents
-
 - [Introduction](#introduction)
-- [Why learn two languages HTML5 and CSS3 separately?](#why-learn-two-languages-html5-and-css3-separately)
+- [Why Learn Two Languages HTML5 and CSS3 Separately?](#why-learn-two-languages-html5-and-css3-separately)
 - [Summary](#summary)
-- [1. Create your first web page in HTML](#1-create-your-first-web-page-in-html)
-  - [1.1 Mastering HTML tags](#11-mastering-html-tags)
-  - [1.2 Customize tags with attributes](#12-customize-tags-with-attributes)
-  - [1.3 Use the basic structure of an HTML page](#13-use-the-basic-structure-of-an-html-page)
-  - [1.4 Comment your HTML code](#14-comment-your-html-code)
-- [2. Organize your text](#2-organize-your-text)
-  - [2.1 Create paragraphs with `<p>` tags](#21-create-paragraphs-with-p-tags)
-  - [2.2 Line break with `<br>` orphan tag](#22-line-break-with-br-orphan-tag)
+- [1. Create Your First Web Page in HTML](#1-create-your-first-web-page-in-html)
+  - [1.1 Mastering HTML Tags](#11-mastering-html-tags)
+  - [1.2 Customize Tags with Attributes](#12-customize-tags-with-attributes)
+  - [1.3 Use the Basic Structure of an HTML Page](#13-use-the-basic-structure-of-an-html-page)
+  - [1.4 Comment Your HTML Code](#14-comment-your-html-code)
+- [2. Organize Your Text](#2-organize-your-text)
+  - [2.1 Create Paragraphs with `<p>` Tags](#21-create-paragraphs-with-p-tags)
+  - [2.2 Line Break with `<br>` Orphan Tag](#22-line-break-with-br-orphan-tag)
   - [2.3 Create Headings with `<h1>`, `<h2>`, `<h3>`, ...](#23-create-headings-with-h1-h2-h3-)
   - [2.4 Create Lists with `<li>` and `<ul>` or `<ol>`](#24-create-lists-with-li-and-ul-or-ol)
-  - [2.5 Emphasize important text](#25-emphasize-important-text)
+  - [2.5 Emphasize Important Text](#25-emphasize-important-text)
+- [3. Create a Hypertext Link in HTML](#3-create-a-hypertext-link-in-html)
+  - [3.1 Create a Hypertext Link with the `<a>` Tag and the `href` Attribute](#31-create-a-hypertext-link-with-the-a-tag-and-the-href-attribute)
+    - [3.1.1 Create a Hypertext Link from One Page to Another on Your Site](#311-create-a-hypertext-link-from-one-page-to-another-on-your-site)
+    - [3.1.2 Create a Hypertext Link to the URL of a Page Available on the Internet](#312-create-a-hypertext-link-to-the-url-of-a-page-available-on-the-internet)
+  - [3.2 Create an Anchor with the `id` and `href` Attributes](#32-create-an-anchor-with-the-id-and-href-attributes)
+    - [3.2.1 The Anchor is Further Down on the Same Page](#321-the-anchor-is-further-down-on-the-same-page)
+    - [3.2.2 The Anchor is Located in Another Page](#322-the-anchor-is-located-in-another-page)
+  - [3.3 Special Configuration of Links](#33-special-configuration-of-links)
 
 
 ## Why learn two languages HTML5 and CSS3 separately?
@@ -251,3 +258,108 @@ text on your page.
 | `<em></em>`          | Make the text italic.           |
 | `<strong></strong>`  | Make the text bold.             |
 
+
+# 3. Create a hypertext link in HTML
+
+## 3.1 Create a hypertext link with the `<a>` Tag and the `href` attribute
+
+1. Use the `<a>` tag (for "anchor") to indicate that you will redirect to another location.
+2. Add the `href` attribute followed by `=` to announce the location to which you want to redirect.
+3. Explicitly specify the location to which the link should redirect between " ".
+4. Finally, write the text that should appear on the hyperlink.
+
+### 3.1.1 Create a hypertext Link from one page to another on your site
+
+To achieve this, create a folder named `content` and a file named `page2.html`.
+Add the following line at the end of the body of `index.html` to enable navigation to page2:
+
+```html
+<a href="content/page2.html">Next</a>
+```
+
+### 3.1.2 Create a hypertext link to the url of a page available on the internet
+
+To redirect the user to our Facebook page, add the following content to `page2.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HabibiComeToTunisia</title>
+</head>
+<body>
+<h1>Habibi welcome to Tunisia!</h1>
+<p>
+  You can follow us on Facebook
+</p>
+
+<h4><em>Follow us on Facebook:</em></h4>
+<a href="https://www.facebook.com/ResidenceDesPin" target="_blank">Facebook</a> <br>
+
+<a href="../index.html">Previous</a>
+
+</body>
+</html>
+```
+
+## 3.2 Create an anchor with the `id` and `href` attributes
+
+To create an anchor, add the `id` attribute to a tag that will serve as a marker. It can be any tag, such as a title tag.
+Here's how you can do it: The first step is to add the `id` attribute followed by `=` to give a name to the anchor between " ":
+
+```html
+<h2 id="my_anchor">Title</h2>
+```
+
+The `id` attribute is used to give a "unique" name to a tag, to use it as a reference. Here, we use it to create a link to an anchor, but in CSS, it can be useful to locate a specific tag.
+
+### 3.2.1 The anchor is further down on the same page
+
+To achieve this, create a file named `page3.html` in the `content` folder:
+
+```html
+<h1>My big page</h1>
+<p>
+  Discover our design tips for:<br>
+  <a href="#kitchen">The kitchen</a><br>
+  <a href="#garden">The garden</a><br>
+  <a href="#living_room">The living room</a><br>
+</p>
+<h2 id="kitchen">The kitchen</h2>
+<p>... (some text) ...</p>
+<h2 id="garden">The garden</h2>
+<p>... (some text) ...</p>
+<h2 id="living_room">The living room</h2>
+<p>... (some text) ...</p>
+
+<a href="../index.html">Home</a>
+```
+
+### 3.2.2 The anchor is located in another page
+
+In this case, type the name of the target page before the hash `#` and finally the name of the anchor:
+
+```html
+<a href="content/page3.html#garden">The garden</a>
+```
+
+## 3.3 Special configuration of links
+
+- To make the hyperlink open in a new tab:
+
+```html
+<p>Do you want to follow us on Facebook <a href="https://www.facebook.com/ResidenceDesPin" target="_blank">Facebook</a>?</p>
+```
+
+- Create a hyperlink that opens the email box with a new empty message.
+
+```html
+<a href="mailto:douggui.med.amine@gmail.com">Gmail</a>
+```
+
+- Create a hyperlink that allows downloading a file that you have previously placed in the same folder as your web page.
+
+```html
+<a href="FILE.EXTENSION" download>Download</a>
+```
