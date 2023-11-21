@@ -319,6 +319,51 @@ The `id` attribute is used to give a "unique" name to a tag, to use it as a refe
 To achieve this, create a file named `page3.html` in the `content` folder:
 
 ```html
+<h1>My big page</h1>
+<p>
+  Discover our design tips for:<br>
+  <a href="#kitchen">The kitchen</a><br>
+  <a href="#garden">The garden</a><br>
+  <a href="#living_room">The living room</a><br>
+</p>
+<h2 id="kitchen">The kitchen</h2>
+<p>... (some text) ...</p>
+<h2 id="garden">The garden</h2>
+<p>... (some text) ...</p>
+<h2 id="living_room">The living room</h2>
+<p>... (some text) ...</p>
+
+<a href="../index.html">Home</a>
+```
+
+### 3.2.2 The anchor is located in another page
+
+In this case, type the name of the target page before the hash `#` and finally the name of the anchor:
+
+```html
+<a href="content/page3.html#garden">The garden</a>
+```
+
+## 3.3 Special configuration of links
+
+- To make the hyperlink open in a new tab:
+
+```html
+<p>Do you want to follow us on Facebook <a href="https://www.facebook.com/ResidenceDesPin" target="_blank">Facebook</a>?</p>
+```
+
+- Create a hyperlink that opens the email box with a new empty message.
+
+```html
+<a href="mailto:douggui.med.amine@gmail.com">Gmail</a>
+```
+
+- Create a hyperlink that allows downloading a file that you have previously placed in the same folder as your web page.
+```html
+<a href="FILE.EXTENSION" download>Download</a>
+```
+- finally: 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -365,32 +410,4 @@ To achieve this, create a file named `page3.html` in the `content` folder:
 
 </body>
 </html>
-```
-
-### 3.2.2 The anchor is located in another page
-
-In this case, type the name of the target page before the hash `#` and finally the name of the anchor:
-
-```html
-<a href="content/page3.html#garden">The garden</a>
-```
-
-## 3.3 Special configuration of links
-
-- To make the hyperlink open in a new tab:
-
-```html
-<p>Do you want to follow us on Facebook <a href="https://www.facebook.com/ResidenceDesPin" target="_blank">Facebook</a>?</p>
-```
-
-- Create a hyperlink that opens the email box with a new empty message.
-
-```html
-<a href="mailto:douggui.med.amine@gmail.com">Gmail</a>
-```
-
-- Create a hyperlink that allows downloading a file that you have previously placed in the same folder as your web page.
-
-```html
-<a href="FILE.EXTENSION" download>Download</a>
 ```
