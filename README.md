@@ -19,3 +19,15 @@ What we'll do is simply code:
 These two files will be saved on your computer. To make them communicate, all you need to do is add a single line of code in the HTML file!
 Thanks to this line of code, whenever you click on your HTML file to open it and view your website in the browser, it will automatically call the CSS file.
 This will allow you to admire the styling you have applied and modify it at your leisure without affecting the content.
+
+### En résumé
+- Le HTML constitue la structure d'une page web.
+- Le CSS permet d'ajouter du style. 
+- Les deux langages se complètent avec un rôle bien défini pour chacun. 
+- Le navigateur est un logiciel qui permet de lire les langages du Web : HTML et CSS. 
+- Tous les navigateurs embarquent des outils de développement, dont l'outil d'inspection qui permet d'accéder au HTML et au CSS d'une page.
+
+# Appropriez-vous les balises HTML
+
+
+![Balise orpheline](pics/balise_orpheline.png)
