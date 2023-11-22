@@ -416,8 +416,8 @@ In this case, type the name of the target page before the hash `#` and finally t
 </html>
 ```
 
-# 4. Insert Images
-## 4.1 Insert an Image with the Orphan Tag `<img>`
+# 4. Insert images
+## 4.1 Insert an zmage with the orphan tag `<img>`
 The tag that allows you to insert an image is an orphan tag: `<img>`. To work correctly, it must be accompanied by two attributes:
 1. src: This attribute indicates the source of the image.
 2. alt: This attribute provides an alternative description for the image.
@@ -429,7 +429,7 @@ The tag that allows you to insert an image is an orphan tag: `<img>`. To work co
 </p>
 ```
 
-## 4.2 Choose the Right Image Format
+## 4.2 Choose the right image format
 Here's which format to adopt based on the type of image you have:
 
 - A photo: use JPEG.
@@ -438,7 +438,7 @@ Here's which format to adopt based on the type of image you have:
 - An animated image: use an animated GIF.
 - A vector logo: use SVG.
 
-## 4.3 Add a Tooltip with the `title` Attribute
+## 4.3 Add a tooltip with the `title` attribute
 
 To display a tooltip on your images, you can use the `title` attribute (not to be confused with the `<title>` tag, which indicates the browser's title for a web page). The `title` attribute is optional, unlike `alt`.
 
@@ -453,7 +453,7 @@ Here's how it can be done:
 
 Visitors to the site only need to hover over the image with the mouse to see the tooltip "Bizerte's most famous street food" appear over the image.
 
-## 4.4 Create a Clickable Thumbnail
+## 4.4 Create a clickable thumbnail
 
 If your image is very large, it's advisable to display a clickable thumbnail on your site. This way, your web pages will load faster. If visitors want to see your images in their original size, they can click on them. To achieve this, you need two versions of a photo: the original image and a lighter version (smaller).
 Let's see how to make the thumbnail clickable:
