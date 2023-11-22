@@ -213,41 +213,24 @@ To mark elements in a list, use `<li> </li>` (for "listed item"). Then, insert t
 
 Here's an example:
 
+- For unordered list
 ```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>HabibiComeToTunisia</title>
-</head>
-<body>
-<h1>Habibi welcome to Tunisia!</h1>
-<p>
-  Experience the perfect blend of comfort and adventure. Welcome to HabibiComeToTunisia.com, your exclusive gateway to unforgettable waterfront getaways in Bizerte, Tunisia.
-</p>
-
-<h2><em>convenient booking</em></h2>
-<p>
-  Indulge in the epitome of luxury with our exquisite range of villas, mini-villas, and apartments,<br>offering an opulent selection from cozy studios to expansive 5-bedroom sanctuaries by the azure shores of Bizerte.
-</p>
 <h3><mark>Our offer</mark></h3>
 <ul>
   <li>Villas</li>
   <li>Mini-villas</li>
   <li>Apartments</li>
 </ul>
+```
 
-<p>
-  Embark on a blissful tourist journey in <strong>Bizerte</strong>, where each day unfolds with</p>
+- For ordered list
+```html
 <h4>your journey:</h4>
 <ol>
   <li>A sumptuous breakfast</li>
   <li>Sun-soaked moments on pristine beaches</li>
   <li>Enchanting explorations of local treasures, and tranquil evenings immersed in the vibrant culture of this coastal haven.</li>
 </ol>
-
-</body>
-</html>
 ```
 
 ## 2.5 Emphasize important text
@@ -469,3 +452,4 @@ The enlarged image is displayed when clicking on the thumbnail.
   <a href="pics/dolphin.jpg"><img src="pics/dolphin_mini.jpg" title="Dolphin greetings" alt="Dolphin greetings" title="Click to zoom"></a>
 </p>
 ```
+
