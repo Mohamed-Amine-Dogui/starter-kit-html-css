@@ -1,5 +1,6 @@
 
-# Introduction
+#
+Introduction
 
 Welcome to the go-to resource for kickstarting your front-end web development journey with HTML5 and CSS3. By delving into HTML and CSS, you'll gain the skills to breathe life into your web projects, creating interfaces that captivate and engage users.
 
@@ -23,6 +24,11 @@ Welcome to the go-to resource for kickstarting your front-end web development jo
     - [3.2.1 The Anchor is Further Down on the Same Page](#321-the-anchor-is-further-down-on-the-same-page)
     - [3.2.2 The Anchor is Located in Another Page](#322-the-anchor-is-located-in-another-page)
   - [3.3 Special Configuration of Links](#33-special-configuration-of-links)
+- [4. Insert Images](#4-insert-images)
+  - [4.1 Insert an Image with the Orphan Tag `<img>`](#41-insert-an-image-with-the-orphan-tag-img)
+  - [4.2 Choose the Right Image Format](#42-choose-the-right-image-format)
+  - [4.3 Add a Tooltip with the `title` Attribute](#43-add-a-tooltip-with-the-title-attribute)
+  - [4.4 Create a Clickable Thumbnail](#44-create-a-clickable-thumbnail)
 
 
 ## Why learn two languages HTML5 and CSS3 separately?
@@ -410,4 +416,56 @@ In this case, type the name of the target page before the hash `#` and finally t
 </html>
 ```
 
-# 4. Insérez des images
+# 4. Insert Images
+## 4.1 Insert an Image with the Orphan Tag `<img>`
+The tag that allows you to insert an image is an orphan tag: `<img>`. To work correctly, it must be accompanied by two attributes:
+1. src: This attribute indicates the source of the image.
+2. alt: This attribute provides an alternative description for the image.
+
+```html
+<p>
+  Kosksi:<br>
+  <img src="../pics/kosksi.jpg" alt="kosksi" />
+</p>
+```
+
+## 4.2 Choose the Right Image Format
+Here's which format to adopt based on the type of image you have:
+
+- A photo: use JPEG.
+- Any image with few colors (less than 256): use PNG 8 bits, or optionally GIF.
+- Any image with many colors: use PNG 24 bits.
+- An animated image: use an animated GIF.
+- A vector logo: use SVG.
+
+## 4.3 Add a Tooltip with the `title` Attribute
+
+To display a tooltip on your images, you can use the `title` attribute (not to be confused with the `<title>` tag, which indicates the browser's title for a web page). The `title` attribute is optional, unlike `alt`.
+
+Here's how it can be done:
+
+```html
+<p>
+  Lablebi:<br>
+  <img src="../pics/lablebi.jpg" title="Bizerte's most famous street food" alt="lablebi" />
+</p>
+```
+
+Visitors to the site only need to hover over the image with the mouse to see the tooltip "Bizerte's most famous street food" appear over the image.
+
+## 4.4 Create a Clickable Thumbnail
+
+If your image is very large, it's advisable to display a clickable thumbnail on your site. This way, your web pages will load faster. If visitors want to see your images in their original size, they can click on them. To achieve this, you need two versions of a photo: the original image and a lighter version (smaller).
+Let's see how to make the thumbnail clickable:
+1. Place your two images in a folder called, for example, "images."
+2. Display the "dolphin_mini.jpg" version on a page.
+3. Link to the "dolphin.jpg" version.
+
+The enlarged image is displayed when clicking on the thumbnail.
+
+```html
+<p>
+  Would you like to see the dolphin in its original size? Click on it!<br>
+  <a href="pics/dolphin.jpg"><img src="pics/dolphin_mini.jpg" title="Dolphin greetings" alt="Dolphin greetings" title="Click to zoom"></a>
+</p>
+```
