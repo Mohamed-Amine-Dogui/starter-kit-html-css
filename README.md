@@ -269,25 +269,8 @@ Add the following line at the end of the body of `index.html` to enable navigati
 To redirect the user to our Facebook page, add the following content to `page2.html`:
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>HabibiComeToTunisia</title>
-</head>
-<body>
-<h1>Habibi welcome to Tunisia!</h1>
-<p>
-  You can follow us on Facebook
-</p>
-
 <h4><em>Follow us on Facebook:</em></h4>
 <a href="https://www.facebook.com/ResidenceDesPin" target="_blank">Facebook</a> <br>
-
-<a href="../index.html">Previous</a>
-
-</body>
-</html>
 ```
 
 ## 3.2 Create an anchor with the `id` and `href` attributes
