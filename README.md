@@ -7,37 +7,44 @@ Welcome to the go-to resource for kickstarting your front-end web development jo
 
 ## Table of Contents
 
-- [1. Create Your First Web Page in HTML](#1-create-your-first-web-page-in-html)
-  - [1.1 Mastering HTML Tags](#11-mastering-html-tags)
-  - [1.2 Customize Tags with Attributes](#12-customize-tags-with-attributes)
-  - [1.3 Use the Basic Structure of an HTML Page](#13-use-the-basic-structure-of-an-html-page)
-  - [1.4 Comment Your HTML Code](#14-comment-your-html-code)
-- [2. Organize Your Text](#2-organize-your-text)
-  - [2.1 Create Paragraphs with `<p>` Tags](#21-create-paragraphs-with-p-tags)
-  - [2.2 Line Break with `<br>` Orphan Tag](#22-line-break-with-br-orphan-tag)
-  - [2.3 Create Headings with `<h1>`, `<h2>`, `<h3>`, ...](#23-create-headings-with-h1-h2-h3-)
-  - [2.4 Create Lists with `<li>` and `<ul>` or `<ol>`](#24-create-lists-with-li-and-ul-or-ol)
-  - [2.5 Emphasize Important Text](#25-emphasize-important-text)
-- [3. Create a Hypertext Link in HTML](#3-create-a-hypertext-link-in-html)
-  - [3.1 Create a Hypertext Link with the `<a>` Tag and the `href` Attribute](#31-create-a-hypertext-link-with-the-a-tag-and-the-href-attribute)
-    - [3.1.1 Create a Hypertext Link from One Page to Another on Your Site](#311-create-a-hypertext-link-from-one-page-to-another-on-your-site)
-    - [3.1.2 Create a Hypertext Link to the URL of a Page Available on the Internet](#312-create-a-hypertext-link-to-the-url-of-a-page-available-on-the-internet)
-  - [3.2 Create an Anchor with the `id` and `href` Attributes](#32-create-an-anchor-with-the-id-and-href-attributes)
-    - [3.2.1 The Anchor is Further Down on the Same Page](#321-the-anchor-is-further-down-on-the-same-page)
-    - [3.2.2 The Anchor is Located in Another Page](#322-the-anchor-is-located-in-another-page)
-  - [3.3 Special Configuration of Links](#33-special-configuration-of-links)
-- [4. Insert Images](#4-insert-images)
-  - [4.1 Insert an Image with the Orphan Tag `<img>`](#41-insert-an-image-with-the-orphan-tag-img)
-  - [4.2 Choose the Right Image Format](#42-choose-the-right-image-format)
-  - [4.3 Add a Tooltip with the `title` Attribute](#43-add-a-tooltip-with-the-title-attribute)
-  - [4.4 Create a Clickable Thumbnail](#44-create-a-clickable-thumbnail)
-- [5. Integrate CSS into the HTML Page](#5-integrate-css-into-the-html-page)
-  - [5.1 Apply a CSS Property to an HTML Page](#51-apply-a-css-property-to-an-html-page)
-  - [5.2 Apply a Style to an Isolated Element with the `class` Attribute](#52-apply-a-style-to-an-isolated-element-with-the-class-attribute)
-  - [5.3 Apply a CSS property to a unique element with the `id` attribute](#53-apply-a-css-property-to-a-unique-element-with-the-id-attribute)
-  - [5.4 Utilize Universal Tags `<span>` or `<div>`](#54-utilize-universal-tags-span-or-div)
-  - [5.5 Insert an Image in the Background at the Title Level](#55-insert-an-image-in-the-background-at-the-title-level)
-
+- [1. Master HTML5 Basics](#1-master-html5-basics)
+  - [1.1 Create Your First Web Page in HTML](#11-create-your-first-web-page-in-html)
+    - [1.1.1 Mastering HTML Tags](#111-mastering-html-tags)
+    - [1.1.2 Customize Tags with Attributes](#112-customize-tags-with-attributes)
+    - [1.1.3 Use the Basic Structure of an HTML Page](#113-use-the-basic-structure-of-an-html-page)
+    - [1.1.4 Comment Your HTML Code](#114-comment-your-html-code)
+  - [1.2 Organize Your Text](#12-organize-your-text)
+    - [1.2.1 Create Paragraphs with `<p>` Tags](#121-create-paragraphs-with-p-tags)
+    - [1.2.2 Line Break with `<br>` Orphan Tag](#122-line-break-with-br-orphan-tag)
+    - [1.2.3 Create Headings with `<h1>`, `<h2>`, `<h3>`, ...](#123-create-headings-with-h1-h2-h3-)
+    - [1.2.4 Create Lists with `<li>` and `<ul>` or `<ol>`](#124-create-lists-with-li-and-ul-or-ol)
+      - [1.2.4.1 Step 1: Enclose List Items with `<li> </li>`](#1241-step-1-enclose-list-items-with-li-li)
+      - [1.2.4.2 Step 2: Insert the List into `<ul> </ul>` or `<ol> </ol>`](#1242-step-2-insert-the-list-into-ul-ul-or-ol-ol)
+    - [1.2.5 Emphasize Important Text](#125-emphasize-important-text)
+  - [1.3 Create a Hypertext Link in HTML](#13-create-a-hypertext-link-in-html)
+    - [1.3.1 Create a Hypertext Link with the `<a>` Tag and the `href` Attribute](#131-create-a-hypertext-link-with-the-a-tag-and-the-href-attribute)
+      - [1.3.1.1 Create a Hypertext Link from One Page to Another on Your Site](#1311-create-a-hypertext-link-from-one-page-to-another-on-your-site)
+      - [1.3.1.2 Create a Hypertext Link to the URL of a Page Available on the Internet](#1312-create-a-hypertext-link-to-the-url-of-a-page-available-on-the-internet)
+    - [1.3.2 Create an Anchor with the `id` and `href` Attributes](#132-create-an-anchor-with-the-id-and-href-attributes)
+      - [1.3.2.1 The Anchor is Further Down on the Same Page](#1321-the-anchor-is-further-down-on-the-same-page)
+      - [1.3.2.2 The Anchor is Located in Another Page](#1322-the-anchor-is-located-in-another-page)
+    - [1.3.3 Special Configuration of Links](#133-special-configuration-of-links)
+  - [1.4 Insert Images](#14-insert-images)
+    - [1.4.1 Insert an Image with the Orphan Tag `<img>`](#141-insert-an-image-with-the-orphan-tag-img)
+    - [1.4.2 Choose the Right Image Format](#142-choose-the-right-image-format)
+    - [1.4.3 Add a Tooltip with the `title` Attribute](#143-add-a-tooltip-with-the-title-attribute)
+    - [1.4.4 Create a Clickable Thumbnail](#144-create-a-clickable-thumbnail)
+- [2. Design Your Web Pages with CSS3](#2-design-your-web-pages-with-css3)
+  - [2.1 Apply a CSS Property to an HTML Page](#21-apply-a-css-property-to-an-html-page)
+    - [2.1 Apply a CSS Property to an HTML Page](#21-apply-a-css-property-to-an-html-page)
+    - [2.1.1 Apply a Style to an Isolated Element with the `class` Attribute](#211-apply-a-style-to-an-isolated-element-with-the-class-attribute)
+    - [2.1.2 Apply a CSS Property to a Unique Element with the `id` Attribute](#212-apply-a-css-property-to-a-unique-element-with-the-id-attribute)
+    - [2.1.3 Utilize Universal Tags `<span>` or `<div>`](#213-utilize-universal-tags-span-or-div)
+    - [2.1.4 Insert an Image in the Background at the Title Level](#214-insert-an-image-in-the-background-at-the-title-level)
+  - [2.2 Change Text Appearance](#22-change-text-appearance)
+  - [2.3 Add Color and Background](#23-add-color-and-background)
+  - [2.4 Create Borders and Shadows](#24-create-borders-and-shadows)
+  - [2.5 Create Dynamic Appearances](#25-create-dynamic-appearances)
 
 
 ## Why learn two languages HTML5 and CSS3 separately?
@@ -66,8 +73,9 @@ This will allow you to admire the styling you have applied and modify it at your
 - The browser is software that reads the languages of the web: HTML and CSS.
 - All browsers include development tools, including the inspection tool that provides access to the HTML and CSS of a page.
 
-# 1. Create your first web page in HTML
-## 1.1 Mastering HTML tags
+# 1. Master HTML5 basics
+## 1.1 Create your first web page in HTML
+### 1.1.1 Mastering HTML tags
 
 HTML, the language of the web, uses elements called tags. These tags are written between angle brackets `<` and `>`. They indicate the nature of the text they enclose, allowing the browser to understand what to display on the screen for website visitors.
 ![Tag](pics/tag.jpg)
@@ -83,12 +91,12 @@ There are two types of tags:
 
 An orphan tag is written like this: `<img>`
 
-## 1.2 Customize tags with attributes
+### 1.1.2 Customize tags with attributes
 
 Tags are sometimes accompanied by attributes to provide additional information or configure an element (e.g., `<img src="photo.jpg">`).
 ![Orphan Tag](pics/orphan_tag.jpg)
 
-## 1.3 Use the basic structure of an HTML page
+### 1.1.3 Use the basic structure of an HTML page
 
 Create an `index.html` file and add the following code:
 
@@ -116,7 +124,7 @@ Experience the perfect blend of comfort and adventure. Welcome to HabibiComeToTu
 - The paired `<title> </title>` tag informs the browser of the web page's title, crucial for search results and browser tab display.
 - The paired `<body> </body>` tag contains everything that will be displayed on the web page.
 
-## 1.4 Comment your HTML code
+### 1.1.4 Comment your HTML code
 
 In HTML, a comment is simply a memo. It has a specific format: `<!-- This is a comment -->`.
 To comment lines (or even multiple lines) in Visual Studio Code:
@@ -132,9 +140,9 @@ To comment lines (or even multiple lines) in Intelij:
 2. To comment out a single line, press Ctrl + Shift + /
 
 
-# 2. Organize your text
+## 1.2 Organize your text
 
-## 2.1 Create paragraphs with `<p>` tags
+### 1.2.1 Create paragraphs with `<p>` tags
 
 The `<p>` tags are used to delimit paragraphs in HTML:
 
@@ -158,7 +166,7 @@ The `<p>` tags are used to delimit paragraphs in HTML:
 </html>
 ```
 
-## 2.2 Line break with `<br>` orphan tag
+### 1.2.2 Line break with `<br>` orphan tag
 
 To create a line break, use the `<br>` orphan tag (for break); it does not require closing:
 
@@ -182,7 +190,7 @@ To create a line break, use the `<br>` orphan tag (for break); it does not requi
 </html>
 ```
 
-## 2.3 Create Headings with `<h1>`, `<h2>`, `<h3>`, ...
+### 1.2.3 Create Headings with `<h1>`, `<h2>`, `<h3>`, ...
 
 ```html
 <!DOCTYPE html>
@@ -211,12 +219,12 @@ To create a line break, use the `<br>` orphan tag (for break); it does not requi
 </html>
 ```
 
-## 2.4 Create Lists with `<li>` and `<ul>` or `<ol>`
+### 1.2.4 Create Lists with `<li>` and `<ul>` or `<ol>`
 
-### Step 1: Enclose list items with `<li> </li>`
+#### Step 1: Enclose list items with `<li> </li>`
 To mark elements in a list, use `<li> </li>` (for "listed item"). Then, insert them all inside another tag to indicate whether it's an unordered list or an ordered list.
 
-### Step 2: Insert the list into `<ul> </ul>` or `<ol> </ol>`
+#### Step 2: Insert the list into `<ul> </ul>` or `<ol> </ol>`
 - `<ul>` tags (for "unordered list") indicate the start of an unordered list, also known as a bulleted list.
 - `<ol>` tags (for "ordered list") indicate the start of an ordered list, or a numbered list.
 
@@ -242,7 +250,7 @@ Here's an example:
 </ol>
 ```
 
-## 2.5 Emphasize important text
+### 1.2.5 Emphasize important text
 
 In web page text, you may want to highlight specific words. The most commonly used tag for this is `<strong>`, but HTML offers various ways to emphasize
 
@@ -255,16 +263,16 @@ text on your page.
 | `<strong></strong>`  | Make the text bold.             |
 
 
-# 3. Create a hypertext link in HTML
+## 1.3 Create a hypertext link in HTML
 
-## 3.1 Create a hypertext link with the `<a>` Tag and the `href` attribute
+### 1.3.1 Create a hypertext link with the `<a>` Tag and the `href` attribute
 
 1. Use the `<a>` tag (for "anchor") to indicate that you will redirect to another location.
 2. Add the `href` attribute followed by `=` to announce the location to which you want to redirect.
 3. Explicitly specify the location to which the link should redirect between " ".
 4. Finally, write the text that should appear on the hyperlink.
 
-### 3.1.1 Create a hypertext Link from one page to another on your site
+#### 1.3.1.1 Create a hypertext Link from one page to another on your site
 
 To achieve this, create a folder named `content` and a file named `page2.html`.
 Add the following line at the end of the body of `index.html` to enable navigation to page2:
@@ -273,7 +281,7 @@ Add the following line at the end of the body of `index.html` to enable navigati
 <a href="content/page2.html">Next</a>
 ```
 
-### 3.1.2 Create a hypertext link to the url of a page available on the internet
+#### 1.3.1.2 Create a hypertext link to the url of a page available on the internet
 
 To redirect the user to our Facebook page, add the following content to `page2.html`:
 
@@ -282,7 +290,7 @@ To redirect the user to our Facebook page, add the following content to `page2.h
 <a href="https://www.facebook.com/ResidenceDesPin" target="_blank">Facebook</a> <br>
 ```
 
-## 3.2 Create an anchor with the `id` and `href` attributes
+### 1.3.2 Create an anchor with the `id` and `href` attributes
 
 To create an anchor, add the `id` attribute to a tag that will serve as a marker. It can be any tag, such as a title tag.
 Here's how you can do it: The first step is to add the `id` attribute followed by `=` to give a name to the anchor between " ":
@@ -293,7 +301,7 @@ Here's how you can do it: The first step is to add the `id` attribute followed b
 
 The `id` attribute is used to give a "unique" name to a tag, to use it as a reference. Here, we use it to create a link to an anchor, but in CSS, it can be useful to locate a specific tag.
 
-### 3.2.1 The anchor is further down on the same page
+#### 1.3.2.1 The anchor is further down on the same page
 
 To achieve this, create a file named `page3.html` in the `content` folder:
 
@@ -315,7 +323,7 @@ To achieve this, create a file named `page3.html` in the `content` folder:
 <a href="../index.html">Home</a>
 ```
 
-### 3.2.2 The anchor is located in another page
+#### 1.3.2.2 The anchor is located in another page
 
 In this case, type the name of the target page before the hash `#` and finally the name of the anchor:
 
@@ -323,7 +331,7 @@ In this case, type the name of the target page before the hash `#` and finally t
 <a href="content/page3.html#garden">The garden</a>
 ```
 
-## 3.3 Special configuration of links
+### 1.3.3 Special configuration of links
 
 - To make the hyperlink open in a new tab:
 
@@ -391,8 +399,8 @@ In this case, type the name of the target page before the hash `#` and finally t
 </html>
 ```
 
-# 4. Insert images
-## 4.1 Insert an image with the orphan tag `<img>`
+## 1.4 Insert images
+### 1.4.1 Insert an image with the orphan tag `<img>`
 The tag that allows you to insert an image is an orphan tag: `<img>`. To work correctly, it must be accompanied by two attributes:
 1. src: This attribute indicates the source of the image.
 2. alt: This attribute provides an alternative description for the image.
@@ -404,7 +412,7 @@ The tag that allows you to insert an image is an orphan tag: `<img>`. To work co
 </p>
 ```
 
-## 4.2 Choose the right image format
+### 1.4.2 Choose the right image format
 Here's which format to adopt based on the type of image you have:
 
 - A photo: use JPEG.
@@ -413,7 +421,7 @@ Here's which format to adopt based on the type of image you have:
 - An animated image: use an animated GIF.
 - A vector logo: use SVG.
 
-## 4.3 Add a tooltip with the `title` attribute
+### 1.4.3 Add a tooltip with the `title` attribute
 
 To display a tooltip on your images, you can use the `title` attribute (not to be confused with the `<title>` tag, which indicates the browser's title for a web page). The `title` attribute is optional, unlike `alt`.
 
@@ -428,7 +436,7 @@ Here's how it can be done:
 
 Visitors to the site only need to hover over the image with the mouse to see the tooltip "Bizerte's most famous street food" appear over the image.
 
-## 4.4 Create a clickable thumbnail
+### 1.4.4 Create a clickable thumbnail
 
 If your image is very large, it's advisable to display a clickable thumbnail on your site. This way, your web pages will load faster. If visitors want to see your images in their original size, they can click on them. To achieve this, you need two versions of a photo: the original image and a lighter version (smaller).
 Let's see how to make the thumbnail clickable:
@@ -445,9 +453,8 @@ The enlarged image is displayed when clicking on the thumbnail.
 </p>
 ```
 
-Certainly! Here's the updated content with the new chapter added:
-
-# 5. Integrate CSS into the HTML Page
+# 2. Format your web pages with CSS3
+## 2.1 Integrate CSS into the HTML Page
 
 To link the `.css` and `.html` files, you will add a line in the `.html` file to instruct the browser to fetch the stylesheet to display the web page with the applied style properties. This line to be added to the `.html` file opens with the orphan tag `<link>` and is placed inside the `<head> </head>` tags:
 
@@ -461,7 +468,7 @@ To link the `.css` and `.html` files, you will add a line in the `.html` file to
 </head>
 ```
 
-## 5.1 Apply a CSS property to an HTML page
+## 2.1 Apply a CSS property to an HTML page
 
 In the `style.css` file, write:
 
@@ -473,7 +480,7 @@ h2, h3 {
 
 This means that the color `royalblue` will be applied to the `h2` and `h3` level titles.
 
-## 5.2 Apply a style to an isolated element with the `class` attribute
+### 2.1.1 Apply a style to an isolated element with the `class` attribute
 
 To apply a style to a single element (e.g., a single paragraph among all the paragraphs in your code), you can - in theory - use two attributes: 1. the `class` attribute, or 2. the `id` attribute. But in practice, you will mainly use the `class` attribute.
 
@@ -493,7 +500,7 @@ To apply a style to a single element (e.g., a single paragraph among all the par
 }
 ```
 
-## 5.3 Apply a CSS property to a unique element with the `id` attribute
+### 2.1.2 Apply a CSS property to a unique element with the `id` attribute
 
 The `id` attribute works in the same way as the `class` attribute, but there is a significant difference: `id` can only be used once in the code. In CSS, there isn't much difference; it will be especially useful if you do JavaScript later to recognize certain tags. In HTML, there is one because, remember, we used it in the chapter on hyperlinks to create anchors. In practice, therefore, you will use an `id` in CSS only on an element that is unique in the page, like the logo, for example.
 
@@ -512,7 +519,7 @@ The `id` attribute works in the same way as the `class` attribute, but there is 
 }
 ```
 
-## 5.4 Utilize universal tags `<span>` or `<div>`
+### 2.1.3 Utilize universal tags `<span>` or `<div>`
 
 Suppose you want to modify `HabibiComeToTunisia.com` in the following paragraph:
 
@@ -542,7 +549,7 @@ Suppose you want to modify `HabibiComeToTunisia.com` in the following paragraph:
 }
 ```
 
-## 5.5 Insert an image in the background at the Title level
+### 2.1.4 Insert an image in the background at the Title level
 
 ```html
 <head>
@@ -569,3 +576,11 @@ Here are some other values you might use with `background-repeat`:
 - repeat-y: The image is repeated vertically but not horizontally.
 - repeat: The image is repeated both horizontally and vertically.
 - space: The image is repeated to fill the element with equal spacing between the images. If the element is not a complete multiple of the image size, the last image may be truncated.
+
+## 2.2 Change text appearance
+
+## 2.3 Add color and background
+
+## 2.4 Create borders and shadows
+
+## 2.5 Create dynamic appearances
