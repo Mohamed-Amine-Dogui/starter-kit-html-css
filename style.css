@@ -1,0 +1,27 @@
+h2, h3 {
+    /* This is for all title h1 and h2*/
+    color: royalblue;
+}
+
+h1 {
+    /* This is only for title h1 */
+    font-size: 30px ;
+    color: white;
+}
+
+h2 {
+    /* This is only for title h2 */
+    font-size: 20px ;
+}
+
+.my-class {
+    color: gray;
+}
+
+.my-class2 {
+    color: royalblue;
+    font-weight: bold;
+}
+
+
+

@@ -1,10 +1,12 @@
 
 #
+
 Introduction
 
 Welcome to the go-to resource for kickstarting your front-end web development journey with HTML5 and CSS3. By delving into HTML and CSS, you'll gain the skills to breathe life into your web projects, creating interfaces that captivate and engage users.
 
 ## Table of Contents
+
 - [1. Create Your First Web Page in HTML](#1-create-your-first-web-page-in-html)
   - [1.1 Mastering HTML Tags](#11-mastering-html-tags)
   - [1.2 Customize Tags with Attributes](#12-customize-tags-with-attributes)
@@ -29,6 +31,11 @@ Welcome to the go-to resource for kickstarting your front-end web development jo
   - [4.2 Choose the Right Image Format](#42-choose-the-right-image-format)
   - [4.3 Add a Tooltip with the `title` Attribute](#43-add-a-tooltip-with-the-title-attribute)
   - [4.4 Create a Clickable Thumbnail](#44-create-a-clickable-thumbnail)
+- [5. Integrate CSS into the HTML Page](#5-integrate-css-into-the-html-page)
+  - [5.1 Apply a CSS Property to an HTML Page](#51-apply-a-css-property-to-an-html-page)
+  - [5.2 Apply a Style to an Isolated Element with the `class` Attribute](#52-apply-a-style-to-an-isolated-element-with-the-class-attribute)
+  - [5.3 Utilize Universal Tags `<span>` or `<div>`](#53-utilize-universal-tags-span-or-div)
+  - [5.4 Insert an Image in the Background at the Title Level](#54-insert-an-image-in-the-background-at-the-title-level)
 
 
 ## Why learn two languages HTML5 and CSS3 separately?
@@ -383,7 +390,7 @@ In this case, type the name of the target page before the hash `#` and finally t
 ```
 
 # 4. Insert images
-## 4.1 Insert an zmage with the orphan tag `<img>`
+## 4.1 Insert an image with the orphan tag `<img>`
 The tag that allows you to insert an image is an orphan tag: `<img>`. To work correctly, it must be accompanied by two attributes:
 1. src: This attribute indicates the source of the image.
 2. alt: This attribute provides an alternative description for the image.
@@ -436,3 +443,106 @@ The enlarged image is displayed when clicking on the thumbnail.
 </p>
 ```
 
+# 5. Integrate CSS into the HTML Page
+
+To link the `.css` and `.html` files, you will add a line in the `.html` file to instruct the browser to fetch the stylesheet to display the web page with the applied style properties. This line to be added to the `.html` file opens with the orphan tag `<link>` and is placed inside the `<head> </head>` tags:
+
+- First, create a file named `style.css`, and edit your `index.html` as follows:
+
+```html
+<head>
+  <meta charset="utf-8">
+  <title>HabibiComeToTunisia</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+```
+
+## 5.1 Apply a CSS property to an HTML page
+
+In the `style.css` file, write:
+
+```css
+h2, h3 {
+  color: royalblue;
+}
+```
+
+This means that the color `royalblue` will be applied to the `h2` and `h3` level titles.
+
+## 5.2 Apply a style to an isolated element with the `class` attribute
+
+To apply a style to a single element (e.g., a single paragraph among all the paragraphs in your code), you can - in theory - use two attributes: 1. the `class` attribute, or 2. the `id` attribute. But in practice, you will mainly use the `class` attribute.
+
+- Step 1: Mark an element with the `class` attribute in the `index.html` file:
+
+```html
+<p class="my-class">
+  Experience the perfect blend of comfort and adventure. Welcome to HabibiComeToTunisia.com, your exclusive gateway to unforgettable waterfront getaways in Bizerte, Tunisia.
+</p>
+```
+
+- Step 2: Call the name of the `class` attribute with a `.` in the `style.css` file:
+
+```css
+.my-class {
+  color: gray;
+}
+```
+
+## 5.3 Utilize universal tags `<span>` or `<div>`
+
+Suppose you want to modify the species of birds in the following paragraph:
+
+```html
+<p>
+  Experience the perfect blend of comfort and adventure. Welcome to HabibiComeToTunisia.com, your exclusive gateway ...
+</p>
+```
+
+1. `<span>` `</span>`: This is an "inline" type tag, which means a tag that is placed within a text paragraph to select specific words only.
+2. `<div>` `</div>`: This is a "block" type tag, which surrounds a block of text. It creates a new "block" on the page and therefore causes a line break.
+
+- Step 1: Surround the element with `<span>` `</span>` and mark it with the `class` attribute in the `index.html` file:
+
+```html
+<p>
+  Experience the perfect blend of comfort and adventure. Welcome to <span class="my-class2">HabibiComeToTunisia.com</span>, your exclusive gateway...
+</p>
+```
+
+- Step 2: Call the name of the `class` attribute with a `.` in the `style.css` file:
+
+```css
+.my-class2 {
+  color: royalblue;
+  font-weight: bold;
+}
+```
+
+## 5.4 Insert an image in the background at the Title level
+
+```html
+<head>
+<meta charset="utf-8">
+<title>HabibiComeToTunisia</title>
+<style>
+ body {
+   background-image: url('pics/camel_2.jpg');
+   background-position: left top;
+   background-repeat: no-repeat;
+   padding-left: 10px;
+   padding-top: 200px;
+   margin: 0; /* Remove default body margin */
+   width: 100%; /* Extend the image across the full width of the screen */
+ }
+</style>
+<link href="style.css" rel="stylesheet">
+</head>
+```
+
+Here are some other values you might use with `background-repeat`:
+
+- repeat-x: The image is repeated horizontally but not vertically.
+- repeat-y: The image is repeated vertically but not horizontally.
+- repeat: The image is repeated both horizontally and vertically.
+- space: The image is repeated to fill the element with equal spacing between the images. If the element is not a complete multiple of the image size, the last image may be truncated.
