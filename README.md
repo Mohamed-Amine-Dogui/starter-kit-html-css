@@ -491,7 +491,7 @@ To apply a style to a single element (e.g., a single paragraph among all the par
 
 ## 5.3 Utilize universal tags `<span>` or `<div>`
 
-Suppose you want to modify the species of birds in the following paragraph:
+Suppose you want to modify `HabibiComeToTunisia.com` in the following paragraph:
 
 ```html
 <p>
