@@ -34,8 +34,10 @@ Welcome to the go-to resource for kickstarting your front-end web development jo
 - [5. Integrate CSS into the HTML Page](#5-integrate-css-into-the-html-page)
   - [5.1 Apply a CSS Property to an HTML Page](#51-apply-a-css-property-to-an-html-page)
   - [5.2 Apply a Style to an Isolated Element with the `class` Attribute](#52-apply-a-style-to-an-isolated-element-with-the-class-attribute)
-  - [5.3 Utilize Universal Tags `<span>` or `<div>`](#53-utilize-universal-tags-span-or-div)
-  - [5.4 Insert an Image in the Background at the Title Level](#54-insert-an-image-in-the-background-at-the-title-level)
+  - [5.3 Apply a CSS property to a unique element with the `id` attribute](#53-apply-a-css-property-to-a-unique-element-with-the-id-attribute)
+  - [5.4 Utilize Universal Tags `<span>` or `<div>`](#54-utilize-universal-tags-span-or-div)
+  - [5.5 Insert an Image in the Background at the Title Level](#55-insert-an-image-in-the-background-at-the-title-level)
+
 
 
 ## Why learn two languages HTML5 and CSS3 separately?
@@ -443,6 +445,8 @@ The enlarged image is displayed when clicking on the thumbnail.
 </p>
 ```
 
+Certainly! Here's the updated content with the new chapter added:
+
 # 5. Integrate CSS into the HTML Page
 
 To link the `.css` and `.html` files, you will add a line in the `.html` file to instruct the browser to fetch the stylesheet to display the web page with the applied style properties. This line to be added to the `.html` file opens with the orphan tag `<link>` and is placed inside the `<head> </head>` tags:
@@ -489,7 +493,26 @@ To apply a style to a single element (e.g., a single paragraph among all the par
 }
 ```
 
-## 5.3 Utilize universal tags `<span>` or `<div>`
+## 5.3 Apply a CSS property to a unique element with the `id` attribute
+
+The `id` attribute works in the same way as the `class` attribute, but there is a significant difference: `id` can only be used once in the code. In CSS, there isn't much difference; it will be especially useful if you do JavaScript later to recognize certain tags. In HTML, there is one because, remember, we used it in the chapter on hyperlinks to create anchors. In practice, therefore, you will use an `id` in CSS only on an element that is unique in the page, like the logo, for example.
+
+- Step 1: Mark a unique element with the `id` attribute in the `.html` file.
+  For example, with the logo, a unique element that we will "mark" with the `id` attribute in the `.html` file:
+
+```html
+<img src="pics/logo.png" alt="Logo of the website" id="logo">
+```
+
+- Step 2: Call the `id` attribute with a `#` in the `.css` file:
+
+```css
+#logo {
+  /* Add CSS properties here */
+}
+```
+
+## 5.4 Utilize universal tags `<span>` or `<div>`
 
 Suppose you want to modify `HabibiComeToTunisia.com` in the following paragraph:
 
@@ -502,7 +525,7 @@ Suppose you want to modify `HabibiComeToTunisia.com` in the following paragraph:
 1. `<span>` `</span>`: This is an "inline" type tag, which means a tag that is placed within a text paragraph to select specific words only.
 2. `<div>` `</div>`: This is a "block" type tag, which surrounds a block of text. It creates a new "block" on the page and therefore causes a line break.
 
-- Step 1: Surround the element with `<span>` `</span>` and mark it with the `class` attribute in the `index.html` file:
+- Step 1: Surround the element with `<span>` `</span>` and mark it with the `class` attribute in the `.html` file:
 
 ```html
 <p>
@@ -510,7 +533,7 @@ Suppose you want to modify `HabibiComeToTunisia.com` in the following paragraph:
 </p>
 ```
 
-- Step 2: Call the name of the `class` attribute with a `.` in the `style.css` file:
+- Step 2: Call the name of the `class` attribute with a `.` in the `.css` file:
 
 ```css
 .my-class2 {
@@ -519,7 +542,7 @@ Suppose you want to modify `HabibiComeToTunisia.com` in the following paragraph:
 }
 ```
 
-## 5.4 Insert an image in the background at the Title level
+## 5.5 Insert an image in the background at the Title level
 
 ```html
 <head>
