@@ -1,0 +1,28 @@
+body {
+    background-color: #e4e7f0;
+    font-family: sans-serif;
+    margin: 0; /* This it ensures that our elements take up the full width of the page */
+}
+
+
+.banner {
+    padding: 100px; /* This allows us to add space to our element*/
+    background-image: url('../pics/wave-banner.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.8;
+}
+
+h1 {
+    font-size: 50px ;
+    color: #031140;
+    font-family: 'Lobster', sans-serif;
+    text-align: center;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #8360c3, #2ebf91);
+    color: whitesmoke;
+    text-align: center;
+}

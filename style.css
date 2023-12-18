@@ -6,8 +6,8 @@ h1 {
 }
 
 h2 {
-    font-size: 20px ;
-    color: royalblue;
+    font-size: 30px ;
+    color: rgba(5, 102, 125, 0.5 );
 }
 
 h3 {
@@ -16,8 +16,11 @@ h3 {
 
 p {
     font-size: 1em ;
-    font-family: Arial , sans-serif;
-    font-style: italic;
+    font-family: cambria , sans-serif;
+}
+
+body{
+    background-color: #e4e7f0
 }
 
 .my-class {
@@ -29,10 +32,10 @@ p {
     font-weight: bold;
 }
 
-. my-class3 {
+.my-class3 {
     font-weight: 700;
     text-decoration: underline;
-
+    font-style: italic;
 }
 
 

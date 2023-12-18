@@ -1,7 +1,5 @@
 
-#
-
-Introduction
+# Introduction
 
 Welcome to the go-to resource for kickstarting your front-end web development journey with HTML5 and CSS3. By delving into HTML and CSS, you'll gain the skills to breathe life into your web projects, creating interfaces that captivate and engage users.
 
@@ -48,10 +46,14 @@ Welcome to the go-to resource for kickstarting your front-end web development jo
     - [2.2.5 Align Text with the CSS text-align Property](#225-align-text-with-the-css-text-align-property)
     - [2.2.6 Change the Font Type](#226-change-the-font-type)
   - [2.3 Add Color and Background](#23-add-color-and-background)
+    - [2.3.1 Change Text Color with `color`](#231-change-text-color-with-color)
+    - [2.3.2 Apply Background Color with `background-color`](#232-apply-background-color-with-background-color)
+    - [2.3.3 Add a Background Image with `background-image`](#233-add-a-background-image-with-background-image)
+      - [2.3.3.1 Combine CSS Properties with the 'background' Super-Property](#2331-combine-css-properties-with-the-background-super-property)
+    - [2.3.4 Create Gradients with `linear-gradient`](#234-create-gradients-with-linear-gradient)
   - [2.4 Create Borders and Shadows](#24-create-borders-and-shadows)
   - [2.5 Create Dynamic Appearances](#25-create-dynamic-appearances)
 ----
-
 
 ## Why learn two languages HTML5 and CSS3 separately?
 
@@ -672,7 +674,145 @@ h1 {
 ```
 
 
-## 2.3 Add color and background
+# 2.3 Add Color and Background
+
+## 2.3.1 Change Text Color with `color`
+
+The CSS property used to modify text color is `color`.
+
+```css
+h1 {
+  color: blue;
+}
+```
+
+While many color names are supported by browsers, there are other ways to indicate a color in CSS:
+
+- In hexadecimal form (6 digits preceded by a #). Example: `color: #FFC8D3;`
+- In RGB notation (for Red Green Blue in English). Example: `color: rgb(5, 102, 125);`. Note that opacity (or transparency) can be added with RGBA notation, where the last value corresponds to opacity: `color: rgba(5, 102, 125, 0.5);`
+
+```css
+h2 {
+  color: rgba(5, 102, 125, 0.5);
+}
+```
+
+If you want to find a color or convert a value using another syntax, you can use online tools like [Coolors](https://coolors.co/) or [HTML Color Picker](https://www.w3schools.com/colors/colors_picker.asp), or simply search for 'color picker' on Google.
+
+## 2.3.2 Apply Background Color with `background-color`
+
+To indicate a background color, the CSS `background-color` property is used. It is used similarly to the `color` property, allowing you to use color names, hexadecimal notation, or RGB method.
+
+```css
+body {
+  background-color: black; /* The page background will be black */
+  color: white; /* The page text will be white */
+}
+```
+
+## 2.3.3 Add a Background Image with `background-image`
+
+A background image doesn't have to apply to the entire page. You can also place a background image behind titles or paragraphs. The property for indicating a background image is `background-image`, and you should provide the address where the image is located.
+
+```css
+body {
+  background-image: url('../pics/wave-banner.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  opacity: 0.8;
+}
+```
+
+When writing a relative address in the CSS file, keep in mind that the image address should be relative to the .css file, not the .html file. For simplicity, it's recommended to place the background image in the same folder as the .css file (or in a subfolder).
+
+To achieve this, create a file named `page4.html` and `style4.css` in the `content` folder.
+
+HTML file (`page4.html`):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HabibiComeToTunisia</title>
+  <link href="style4.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="banner">
+    <h1>My blog</h1>
+  </div>
+  <p>This is the content of my first paragraph</p>
+  <p>This is the content of my second paragraph</p>
+
+  <a href="../index.html"><mark>home</mark></a>
+</body>
+</html>
+```
+
+CSS file (`style4.css`):
+
+```css
+body {
+  background-color: #e4e7f0;
+  font-family: sans-serif;
+  margin: 0; /* This ensures that our elements take up the full width of the page */
+}
+
+.banner {
+  padding: 100px;
+  background-image: url('../pics/wave-banner.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  opacity: 0.8;
+}
+
+h1 {
+  font-size: 50px;
+  color: #031140;
+  font-family: 'Lobster', sans-serif;
+  text-align: center;
+}
+```
+
+To alter the behavior of a background image, there are several CSS properties:
+
+- `background-attachment: fixed;`: Makes the background image fixed when scrolling.
+- `background-size: cover;`: Resizes the image to fit the container, maintaining its proportions.
+- `background-position: top right;`: Positions the background image.
+
+Each of these properties has various possible values that can be associated with them. You can experiment with different effects on the [Mozilla Developer](https://developer.mozilla.org/) website.
+
+### 2.3.3.1 Combine CSS Properties with the 'background' Super-Property
+
+If you use many properties related to the background, you can use a kind of "super-property" called `background`, whose value can combine several of the properties:
+
+```css
+.banner {
+  background: url('../pics/wave-banner.jpg') cover center;
+}
+```
+
+Note that the order of values doesn't matter; you can combine them in any order.
+
+## 2.3.4 Create Gradients with `linear-gradient`
+
+To create a gradient, you need the CSS property `background`:
+
+```css
+.gradient {
+  background: linear-gradient(90deg, #8360c3, #2ebf91);
+}
+```
+
+Here, `linear-gradient` is used, but there are other ways to create gradients. If you want inspiration for gradients, visit [UI Gradients](https://uigradients.com/#Bupe).
+
 
 ## 2.4 Create borders and shadows
 
