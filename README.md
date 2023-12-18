@@ -36,15 +36,21 @@ Welcome to the go-to resource for kickstarting your front-end web development jo
     - [1.4.4 Create a Clickable Thumbnail](#144-create-a-clickable-thumbnail)
 - [2. Design Your Web Pages with CSS3](#2-design-your-web-pages-with-css3)
   - [2.1 Apply a CSS Property to an HTML Page](#21-apply-a-css-property-to-an-html-page)
-    - [2.1 Apply a CSS Property to an HTML Page](#21-apply-a-css-property-to-an-html-page)
     - [2.1.1 Apply a Style to an Isolated Element with the `class` Attribute](#211-apply-a-style-to-an-isolated-element-with-the-class-attribute)
     - [2.1.2 Apply a CSS Property to a Unique Element with the `id` Attribute](#212-apply-a-css-property-to-a-unique-element-with-the-id-attribute)
     - [2.1.3 Utilize Universal Tags `<span>` or `<div>`](#213-utilize-universal-tags-span-or-div)
     - [2.1.4 Insert an Image in the Background at the Title Level](#214-insert-an-image-in-the-background-at-the-title-level)
   - [2.2 Change Text Appearance](#22-change-text-appearance)
+    - [2.2.1 Change the Size and Style of Text](#221-change-the-size-and-style-of-text)
+    - [2.2.2 Italicize Text](#222-italicize-text)
+    - [2.2.3 Make Text Bold with the CSS font-weight Property](#223-make-text-bold-with-the-css-font-weight-property)
+    - [2.2.4 Underline Text with the CSS text-decoration Property](#224-underline-text-with-the-css-text-decoration-property)
+    - [2.2.5 Align Text with the CSS text-align Property](#225-align-text-with-the-css-text-align-property)
+    - [2.2.6 Change the Font Type](#226-change-the-font-type)
   - [2.3 Add Color and Background](#23-add-color-and-background)
   - [2.4 Create Borders and Shadows](#24-create-borders-and-shadows)
   - [2.5 Create Dynamic Appearances](#25-create-dynamic-appearances)
+----
 
 
 ## Why learn two languages HTML5 and CSS3 separately?
@@ -577,7 +583,94 @@ Here are some other values you might use with `background-repeat`:
 - repeat: The image is repeated both horizontally and vertically.
 - space: The image is repeated to fill the element with equal spacing between the images. If the element is not a complete multiple of the image size, the last image may be truncated.
 
-## 2.2 Change text appearance
+## 2.2 Change Text Appearance
+### 2.2.1 Change the Size and Style of Text
+- To modify the size of the h1 title:
+  in the `style.css` file:
+```css
+h1 {
+  font-size: 3em;
+  color: white;
+  font-family: 'Lobster', sans-serif;
+}
+```
+### 2.2.2 Italicize Text
+- To italicize paragraph text:
+  in the `style.css` file:
+```css
+p {
+  font-style: italic;
+}
+```
+### 2.2.3 Make Text Bold with the CSS font-weight Property
+To vary the thickness of text, the CSS font-weight property is used, and you can assign one of the following values:
+- `bold`: the text will be bold;
+- `normal`: the text will be written normally (default);
+- `thin`: the text is thinner.
+
+It's also possible to be more precise and indicate the thickness of the text with a numerical value ranging from 100 to 900, from thinnest to thickest.
+
+### 2.2.4 Underline Text with the CSS text-decoration Property
+The CSS text-decoration property allows, among other things, to underline the text, but not only. Here are some of the different values it can take:
+- `underline`: underlined
+- `line-through`: strikethrough
+- `none`: normal (default, except for links).
+
+To write the word `luxury` in bold and underline, you need to indicate the word to be modified with `<span></span>` in the `index.html` file:
+
+```html
+<p>
+  Indulge in the epitome of <span class="my-class3">luxury</span> with our exquisite range of villas, mini-villas, and apartments...
+</p>
+```
+
+And in the `style.css` file:
+
+```css
+.my-class3 {
+  font-weight: 700;
+  text-decoration: underline;
+}
+```
+### 2.2.5 Align Text with the CSS text-align Property
+The CSS text-align property allows aligning text according to the given value:
+- `left`: text will be aligned to the left (default setting)
+- `center`: text will be centered
+- `right`: text will be aligned to the right
+
+To center the text of the h1 title, go to the `style.css` file:
+```css
+h1 {
+  text-align: center;
+}
+```
+
+### 2.2.6 Change the Font Type
+- When dealing with text containing long paragraphs, choose a `Sans Serif` font: Inter, Montserrat, Roboto, Poppins.
+- Google Font -> free and royalty-free font -> copy the font link and paste it into the HTML code's head section.
+- Google Font -> copy CSS rules to specify families and paste them into our CSS file. Check the link: [Google Fonts - Lobster](https://fonts.google.com/specimen/Lobster?query=lobster)
+
+- Step 1: Copy the <link> tags into the <head> </head> section of the HTML file, `index.html`:
+```html
+<head>
+<meta charset="utf-8">
+<title>HabibiComeToTunisia</title>
+
+<link href="style.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+```
+
+- Step 2: Use the font-family property in the CSS file to declare that you want to use this font, `style.css` file:
+```css
+h1 {
+  font-family: 'Lobster', sans-serif;
+}
+```
+
 
 ## 2.3 Add color and background
 

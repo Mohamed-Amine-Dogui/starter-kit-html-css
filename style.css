@@ -1,17 +1,23 @@
-h2, h3 {
-    /* This is for all title h1 and h2*/
-    color: royalblue;
-}
-
 h1 {
-    /* This is only for title h1 */
     font-size: 30px ;
     color: white;
+    font-family: 'Lobster', sans-serif;
+    text-align: center;
 }
 
 h2 {
-    /* This is only for title h2 */
     font-size: 20px ;
+    color: royalblue;
+}
+
+h3 {
+    color: royalblue;
+}
+
+p {
+    font-size: 1em ;
+    font-family: Arial , sans-serif;
+    font-style: italic;
 }
 
 .my-class {
@@ -23,5 +29,10 @@ h2 {
     font-weight: bold;
 }
 
+. my-class3 {
+    font-weight: 700;
+    text-decoration: underline;
+
+}
 
 
