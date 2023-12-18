@@ -4,7 +4,6 @@
 Welcome to the go-to resource for kickstarting your front-end web development journey with HTML5 and CSS3. By delving into HTML and CSS, you'll gain the skills to breathe life into your web projects, creating interfaces that captivate and engage users.
 
 ## Table of Contents
-
 - [1. Master HTML5 Basics](#1-master-html5-basics)
   - [1.1 Create Your First Web Page in HTML](#11-create-your-first-web-page-in-html)
     - [1.1.1 Mastering HTML Tags](#111-mastering-html-tags)
@@ -46,12 +45,11 @@ Welcome to the go-to resource for kickstarting your front-end web development jo
     - [2.2.5 Align Text with the CSS text-align Property](#225-align-text-with-the-css-text-align-property)
     - [2.2.6 Change the Font Type](#226-change-the-font-type)
   - [2.3 Add Color and Background](#23-add-color-and-background)
-    - [2.3.1 Change Text Color with `color`](#231-change-text-color-with-color)
-    - [2.3.2 Apply Background Color with `background-color`](#232-apply-background-color-with-background-color)
-    - [2.3.3 Add a Background Image with `background-image`](#233-add-a-background-image-with-background-image)
-      - [2.3.3.1 Combine CSS Properties with the 'background' Super-Property](#2331-combine-css-properties-with-the-background-super-property)
-    - [2.3.4 Create Gradients with `linear-gradient`](#234-create-gradients-with-linear-gradient)
   - [2.4 Create Borders and Shadows](#24-create-borders-and-shadows)
+    - [2.4.1 Create Borders with the CSS `border` Property](#241-create-borders-with-the-css-border-property)
+    - [2.4.2 Round Your Corners with `border-radius`](#242-round-your-corners-with-border-radius)
+    - [2.4.3 Add a Shadow with the CSS `box-shadow` Property](#243-add-a-shadow-with-the-css-box-shadow-property)
+    - [2.4.4 Add a Shadow to Text with the CSS `text-shadow` Property](#244-add-a-shadow-to-text-with-the-css-text-shadow-property)
   - [2.5 Create Dynamic Appearances](#25-create-dynamic-appearances)
 ----
 
@@ -814,6 +812,181 @@ To create a gradient, you need the CSS property `background`:
 Here, `linear-gradient` is used, but there are other ways to create gradients. If you want inspiration for gradients, visit [UI Gradients](https://uigradients.com/#Bupe).
 
 
-## 2.4 Create borders and shadows
+## 2.4 Create Borders and Shadows
+
+### 2.4.1 Create Borders with the CSS `border` Property
+
+CSS provides a wide range of border options: `border-width`, `border-color`, `border-style`...
+
+- The width is defined with a value in pixels (like 2px).
+- The color is specified with a color name, a hexadecimal value, or an RGB value.
+- The type of border can be `solid` (a simple line), `double` (a double line), `dotted` (a dotted line), `dashed` (a dashed line), or others. You have a broad range of options:
+
+HTML file (`page4.html`):
+```html
+<body>
+
+<p class="element">Element</p>
+
+<br>
+<p class="element1">Element1</p>
+
+<br>
+<p class="element2">Element2</p>
+
+</body>
+</html>
+```
+
+CSS file (`style4.css`):
+```css
+.element {
+  background-color: whitesmoke;
+  border: 3px solid #36696d;
+  border-radius: 20px;
+  box-shadow: 40px 6px 15px rgb(29, 49, 36);
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.element1 {
+  border-top: 3px #EB5353 dotted;
+  border-right: 3px #F9D923 double;
+  border-bottom: 3px #36AE7C dashed;
+  border-left: 3px #187498 solid;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.element2 {
+  background-color: skyblue;
+  border-left: 5px #187498 solid;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+```
+
+### 2.4.2 Round Your Corners with `border-radius`
+
+- The CSS `border-radius` property rounds the corners of any element. Simply specify the radius size in pixels.
+- Similar to borders, there's no requirement for the corners to have the same radius; you can also specify the shape for each corner individually.
+- From a design perspective, this is handy when aligning two shapes with border-radius, such as for "button groups." For more information, check Bootstrap's documentation [here](https://getbootstrap.com/docs/4.0/components/button-group/).
+
+HTML file (`page4.html`):
+```html
+<body>
+
+<p class="element">Element</p>
+
+</body>
+</html>
+```
+
+CSS file (`style4.css`):
+```css
+.element {
+  background-color: whitesmoke;
+  border: 3px solid #36696d;
+  border-radius: 10px 30px 0px 90px;
+  box-shadow: 40px 6px 15px rgb(29, 49, 36);
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+```
+
+- It's even possible to create elliptical curves using visualization tools like [Fancy Border Radius](https://9elements.github.io/fancy-border-radius/).
+
+HTML file (`page4.html`):
+```html
+<body>
+
+<p class="elipse">Elipse</p>
+
+</body>
+</html>
+```
+
+CSS file (`style4.css`):
+```css
+.elipse {
+  color: #e4e7f0;
+  background-color: #3d0469;
+  border: 2px solid #cf0284;
+  border-radius: 61% 39% 97% 3% / 62% 48% 52% 38%;
+  box-shadow: 40px 6px 15px rgb(29, 49, 36);
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+```
+
+### 2.4.3 Add a Shadow with the CSS `box-shadow` Property
+
+Shadows provide interesting depth effects on a web page. This is particularly useful for site buttons, indicating visually to site visitors that they are "clickable."
+
+The CSS `box-shadow` property applies to the entire block and takes four values in the following order:
+
+- The horizontal offset of the shadow.
+- The vertical offset of the shadow.
+- The softening of the gradient.
+- The color of the shadow.
+
+Softening can be:
+
+- Low (if given a value less than the offset).
+- Normal (if given a value equal to the offset).
+- High (if given a value greater than the offset).
+
+```css
+.element {
+  font-size: 25px;
+  background-color: skyblue;
+  border-radius: 10px;
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+  padding: 100px;
+}
+```
+
+### 2.4.4 Add a Shadow to Text with the CSS `text-shadow` Property
+
+`text-shadow` allows you to add a shadow to the letters of your text. Vintage effect guaranteed!
+
+The values work exactly like `box-shadow`:
+
+- Horizontal offset.
+- Vertical offset.
+- Softening.
+- Color.
+
+See what it looks like in the code snippet below:
+
+```css
+h1 {
+  font-size: 50px;
+  color: #031140;
+  font-family: 'Lobster', sans-serif;
+  text-align: center;
+  text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+}
+```
 
 ## 2.5 Create dynamic appearances

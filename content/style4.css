@@ -6,7 +6,7 @@ body {
 
 
 .banner {
-    padding: 100px; /* This allows us to add space to our element*/
+    padding: 10px; /* This allows us to add space to our element*/
     background-image: url('../pics/wave-banner.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -19,10 +19,66 @@ h1 {
     color: #031140;
     font-family: 'Lobster', sans-serif;
     text-align: center;
+    text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+
 }
+
 
 .gradient {
     background: linear-gradient(90deg, #8360c3, #2ebf91);
     color: whitesmoke;
     text-align: center;
 }
+
+.element {
+    background-color: whitesmoke;
+    border: 3px solid #36696d;
+    border-radius: 10px 30px 0px 90px;
+    box-shadow: 40px 6px 15px rgb(29, 49, 36);
+    height: 100px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.element1 {
+    border-top: 3px #EB5353 dotted;
+    border-right: 3px #F9D923 double;
+    border-bottom: 3px #36AE7C dashed;
+    border-left: 3px #187498 solid;
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.element2 {
+    background-color: skyblue;
+    border-left: 5px #187498 solid;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.elipse {
+    color: #e4e7f0;
+    background-color: #3d0469;
+    border: 2px solid #cf0284;
+    border-radius: 61% 39% 97% 3% / 62% 48% 52% 38%;
+    box-shadow: 40px 6px 15px rgb(29, 49, 36);
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
