@@ -1,0 +1,83 @@
+.banner {
+    padding: 10px; /* This allows us to add space to our element*/
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.9;
+    background-image: url('../pics/pizza.jpg');
+}
+
+h1 {
+    font-size: 50px ;
+    color: #e33310;
+    font-family: 'Lobster', sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+h2 {
+    font-size: 40px ;
+    color: whitesmoke;
+    font-family: 'Lobster', sans-serif;
+    text-align: center;
+}
+
+body {
+
+    font-family: sans-serif;
+    margin: 0; /* This it ensures that our elements take up the full width of the page */
+    background-image: url('../pics/grey-bricks.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.intro {
+    font-size: 40px ;
+    color: whitesmoke;
+    justify-content: left;
+    align-items: center;
+    margin: 50px;
+    font-family: 'Romanesco', cursive;
+}
+
+.margherita img {
+    transform: translateX(550px);
+    height: 40%;
+    width: 40%;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px;
+}
+
+img:hover{
+    opacity: 0.8;
+}
+
+a {
+    color : deeppink;
+    text-decoration: none;
+}
+
+a:hover{
+    color : dodgerblue;
+}
+
+a:active{
+    text-decoration: underline;
+}
+
+
+a:focus {
+    background-color: royalblue;
+    color: white;
+    outline-color: gray;
+}
+
+.description-margherita{
+    font-size: 40px ;
+    color: whitesmoke;
+    font-family: 'Romanesco', cursive;
+    margin: 50px;
+}
+
+
+

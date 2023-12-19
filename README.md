@@ -51,7 +51,12 @@ Welcome to the go-to resource for kickstarting your front-end web development jo
     - [2.4.3 Add a Shadow with the CSS `box-shadow` Property](#243-add-a-shadow-with-the-css-box-shadow-property)
     - [2.4.4 Add a Shadow to Text with the CSS `text-shadow` Property](#244-add-a-shadow-to-text-with-the-css-text-shadow-property)
   - [2.5 Create Dynamic Appearances](#25-create-dynamic-appearances)
-----
+    - [2.5.1 Style an Element on Mouse Hover with `:hover`](#251-style-an-element-on-mouse-hover-with-hover)
+    - [2.5.2 Style an Element on Click with `:active`](#252-style-an-element-on-click-with-active)
+    - [2.5.3 Style an Element Selected by the Visitor with `:focus`](#253-style-an-element-selected-by-the-visitor-with-focus)
+    - [2.5.4 Style a Visited Hyperlink with `:visited`](#254-style-a-visited-hyperlink-with-visited)
+
+---
 
 ## Why learn two languages HTML5 and CSS3 separately?
 
@@ -583,6 +588,9 @@ Here are some other values you might use with `background-repeat`:
 - repeat: The image is repeated both horizontally and vertically.
 - space: The image is repeated to fill the element with equal spacing between the images. If the element is not a complete multiple of the image size, the last image may be truncated.
 
+
+
+
 ## 2.2 Change Text Appearance
 ### 2.2.1 Change the Size and Style of Text
 - To modify the size of the h1 title:
@@ -989,4 +997,77 @@ h1 {
 }
 ```
 
-## 2.5 Create dynamic appearances
+Sure, here's the translation and formatting in Markdown for your `README.md`:
+
+---
+
+## 2.5 Create Dynamic Appearances
+
+### 2.5.1 Style an Element on Mouse Hover with `:hover`
+
+The pseudo-class `:hover` is applied when the user hovers over an element with their mouse. The `:hover` pseudo-class essentially means "hover," and it allows us to apply a style to an element upon hover.
+
+Let's take an example where we style hyperlinks. To declare a style that changes the color as soon as a website visitor hovers over it:
+
+**HTML File (`page5.html`):**
+```html
+<body>
+<p class="intro">
+  Discover the essence of Italy with our Pizza Margherita, a classic and iconic Neapolitan masterpiece. If you've ever wished to recreate this culinary gem in the comfort of your own kitchen,
+  <a href="https://www.einfachbacken.de/rezepte/pizza-margherita" target="_blank">click here</a> to find the recipe and embark on a delicious journey inspired by tradition.
+</p>
+
+<p class="margherita">
+  <img src="../pics/Margherita.png" alt="Margherita" title="Margarita">
+  <h2>Mamamia !!!</h2>
+</p>
+
+</body>
+```
+
+**CSS File (`style5.css`):**
+```css
+a {
+  color: deeppink;
+  text-decoration: none;
+}
+
+a:hover {
+  color: dodgerblue;
+}
+```
+
+### 2.5.2 Style an Element on Click with `:active`
+
+The `:active` pseudo-class allows for a specific style to be applied at the moment of clicking. In practice, it is only used on hyperlinks because the style only lasts for a very short time. For example, at the moment of clicking, the link will be underlined.
+
+**CSS File (`style5.css`):**
+```css
+a:active {
+  text-decoration: underline;
+}
+```
+
+### 2.5.3 Style an Element Selected by the Visitor with `:focus`
+
+This is a bit different. The `:focus` pseudo-class applies a style when the element is selected either by a left-click or by the "tab" key.
+
+**CSS File (`style5.css`):**
+```css
+a:focus {
+  background-color: royalblue;
+  color: white;
+  outline-color: gray;
+}
+```
+
+### 2.5.4 Style a Visited Hyperlink with `:visited`
+
+It is possible to apply a style to a hyperlink that has already been "clicked." By default, the browser colors a clicked link in purple. However, thanks to the `:visited` pseudo-class:
+
+```css
+a:visited {
+  color: gray;
+}
+```
+
